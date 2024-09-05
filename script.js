@@ -9,14 +9,14 @@ function toggleMenu() {
 }
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   var homeButton = document.getElementById("ana sehife");
-//   if (homeButton) {
-//       homeButton.addEventListener("click", function() {
-//           window.location.href = "index.html"; // Ana səhifəyə keçid üçün uyğun linki dəyişdirin
-//       });
-//   }
-// });
+document.addEventListener("DOMContentLoaded", function() {
+  var homeButton = document.getElementById("ana sehife");
+  if (homeButton) {
+      homeButton.addEventListener("click", function() {
+          window.location.href = "index.html"; // Ana səhifəyə keçid üçün uyğun linki dəyişdirin
+      });
+  }
+});
 
 
 

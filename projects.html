@@ -1,30 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Idrak Seyfullayev</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Idrak Seyfullayev</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  
+  </div>
+  
+  <div >
+    <button
+    id="ana sehife"
+      class="btn-container"
+    >
+      Ana Səhifə
+    </button>
+  </div>
+    <title>Power BI Proyektlərim</title>
+    <style>
+
+        .btn-container {
+         position: absolute;
+         margin: 10px 0 0 180px;
+         color: black;
+         border-color: rgb(163, 163, 163);
+         width: 120px;
+         height: 50px;
+         border-radius: 25px;
+         display: block;
+         border: solid 1px #aaa;
+        }
+
+        .btn-container:hover{
+          background-color: #000;
+          color: #fff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 45%;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        /* Fullscreen modal üçün üslublar */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .modal-content img {
+            width: 100%;
+        }
+        .close {
+            position: absolute;
+            top: 50px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Power BI Proyektlərim</h1>
+    <p>Burada Power BI ilə yaratdığım layihələrimi izləyə bilərsiniz.</p>
+</header>
+
+<div class="project-container">
+    <!-- İlk Proyekt -->
+    <div class="project">
+        <h2>Proyekt 1</h2>
+        <p>Bu proyekt satış analizinə yönəlib.</p>
+        <img src="./assets/BI.png" alt="Power BI Proyekt 1" onclick="openModal(this)">
+    </div>
+
+    <!-- İkinci Proyekt -->
+    <div class="project">
+        <h2>Proyekt 2</h2>
+        <p>Bu proyekt müştəri davranışlarını analiz edir.</p>
+        <img src="./assets/BI.png" alt="Power BI Proyekt 2" onclick="openModal(this)">
+    </div>
+</div>
+
+<!-- Modal üçün HTML -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <img id="modalImg" alt="">
+    </div>
+</div>
+
+<script>
+    // Şəkil klik edildikdə modalı aç
+    function openModal(img) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+    }
+
+    // Modalı bağla
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+

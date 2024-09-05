@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Python Projects</title>
+  <link rel="stylesheet" href="stylepr.css" />
+</head>
+<body>
+
+  <header>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <button id="ana sehife" class="btn-container">
+           Home Page
+        </button>
+      </div>
+    </nav>
+    <h1>My Python Projects</h1>
+    <p>Here you can follow my projects created with Python.</p>
+  </header>
+
+  <div class="project-container">
+    <!-- İlk Proyekt -->
+    <div class="project_video">
+        <h2 style="text-align: center;">Project 1</h2>
+        <p style="text-align: center;">Project Python Web Scraping.</p>
+        <video src="./assets/WhatsApp Video 2024-09-05 at 14.27.04.mp4" alt="Power BI Proyekt 1" onclick="openModal(this)" controls></video>
+    </div>
+
+    <!-- İkinci Proyekt -->
+    <!-- <div class="project">
+        <h2>Proyekt 2</h2>
+        <p>Bu proyekt müştəri davranışlarını analiz edir.</p>
+        <img src="./assets/BI.png" alt="Power BI Proyekt 2" onclick="openModal(this)">
+    </div> -->
+  </div>
+
+  <!-- Modal üçün HTML -->
+  <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+          <img id="modalImg" alt="">
+      </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

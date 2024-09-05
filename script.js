@@ -1,5 +1,3 @@
-let live_demo = document.getElementById('live demo')
-let ana_sehife = document.getElementById('ana sehife')
 
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
@@ -18,14 +16,33 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var homeButton = document.getElementById("live demo");
+  if (homeButton) {
+      homeButton.addEventListener("click", function() {
+          window.location.href = "projects.html"; // Ana səhifəyə keçid üçün uyğun linki dəyişdirin
+      });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var homeButton = document.getElementById("live demo 2");
+  if (homeButton) {
+      homeButton.addEventListener("click", function() {
+          window.location.href = "projects_2.html"; // Ana səhifəyə keçid üçün uyğun linki dəyişdirin
+      });
+  }
+
+});
+document.addEventListener("DOMContentLoaded", function() {
+  var homeButton = document.getElementById("live demo 3");
+  if (homeButton) {
+      homeButton.addEventListener("click", function() {
+          window.location.href = "projects_3.html"; // Ana səhifəyə keçid üçün uyğun linki dəyişdirin
+      });
+  }
+});
 
 
 
-live_demo.addEventListener('click',()=>{
-  location.href ='./projects.html'
-})
-
-ana_sehife.addEventListener('click',()=>{
-  location.href ='./index.html'
-})
 
